@@ -1,0 +1,6 @@
+def openRussianDoll(doll):
+   if doll == 1: # điều kiện dừng : nếu doll = 1, in ra All dolls are opened 
+    print("All dolls are opened")
+   else:# điều kiện đề quy : nếu doll >1, thực hiện openRussianDoll(doll-1)
+    openRussianDoll(doll-1)
+openRussianDoll(5)
