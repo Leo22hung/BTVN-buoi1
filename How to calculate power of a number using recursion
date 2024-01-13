@@ -1,0 +1,11 @@
+def luy_thua(co_so, mu):
+    # điều kiện dừng: nếu số mũ là 0, trả về 1
+    if mu == 0:
+        return 1
+    else:
+        # điều kiện đề quy: nhân cơ số với giá trị của lời gọi đề quy (co_so ^ (mu-1))
+        return co_so * luy_thua(co_so, mu - 1)
+co_so_so = 2
+so_mu = 3
+ket_qua = luy_thua(co_so_so, so_mu)
+print(f"{co_so_so}^{so_mu} là {ket_qua}")   

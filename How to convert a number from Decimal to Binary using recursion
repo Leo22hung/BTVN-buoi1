@@ -1,0 +1,11 @@
+def thap_phan_sang_nhi_phan(thap_phan):
+    # điều kiện dừng: nếu số thập phân là 0, biểu diễn nhị phân là một chuỗi rỗng
+    if thap_phan == 0:
+        return ""
+    else:
+        # điều kiện đệ quy: chuyển đổi phần nguyên của phép chia cho 2 sang nhị phân
+        # và thêm phần dư vào biểu diễn nhị phân
+        return thap_phan_sang_nhi_phan(thap_phan // 2) + str(thap_phan % 2)
+so_thap_phan = 25
+bieu_dien_nhi_phan = thap_phan_sang_nhi_phan(so_thap_phan)
+print(f"Bản biểu diễn nhị phân của {so_thap_phan} là {bieu_dien_nhi_phan}")

@@ -1,0 +1,8 @@
+def powerOfTwo(n):
+    if n == 0:# điệu kiện dừng: kiểm tra nếu n = 0, trả về 1
+      return 1
+    else: # điều kiện đè quy: nếu n khác 0 ,thực hiện phép tính power = powerOfTwo(n-1), trả về power * 2
+      power = powerOfTwo(n-1)
+      return power * 2
+result = powerOfTwo(3)
+print(result)

@@ -1,0 +1,9 @@
+def factorial(n):
+  # kiểm tra điều kiện: n là số nguyên dương, nếu không in ra The number must be positive integer only!
+    assert n >= 0 and int(n) == n, 'The number must be positive integer only!'
+    if n in [0,1]: #điều kiện dừng: nếu n=0 hoặc n=1, trả về 1
+      return 1
+    else: # điều kiện đề quy: nếu n>1, trả về n * factorial(n-1)
+      return n * factorial(n-1)
+result = factorial(5)
+print(result)

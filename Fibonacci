@@ -1,0 +1,9 @@
+def fibonacci(n):
+   #kiểm tra điều kiện: n là số nguyên dương ,nếu không in ra Fibonacci number cannot be negative number or non integer
+    assert n >=0 and int(n) == n , 'Fibonacci number cannot be negative number or non integer.'  
+    if n in [0,1]: # đièu kiện dừng: nếu n=0 hoặc n=1,trả về n
+       return n
+    else: # điều kiện đề quy: nếu n>1 ,trả về tổng 2 số fibonacci trước đó
+       return fibonacci(n-1) + fibonacci(n-2)
+result = fibonacci(5)
+print(result)

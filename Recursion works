@@ -1,0 +1,13 @@
+def firstMethod():# gọi hàm firstMethod
+    secondMethod() # trỏ tới hàm secondMethod
+    print("I am the first Method") #in ra câu I am the first Method
+def secondMethod(): # gọi hàm secondMethod
+    thirdMethod() # trỏ tới hàm secondMethod
+    print("I am the second Method") # in ra câu I am the second Method
+def thirdMethod():# gọi hàm thirdMethod
+    fourthMethod()# trỏ tới hàm fourthMethod
+    print("I am the third Method")
+def fourthMethod():# gọi hàm fourthMethod
+    print("I am the fourth Method")# in ra câu I am the fourth Method
+firstMethod()
+  

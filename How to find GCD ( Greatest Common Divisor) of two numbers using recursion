@@ -1,0 +1,11 @@
+def uoc_chung_lon_nhat(a, b):
+    # điều kiện dừng: nếu số thứ hai là 0, trả về số thứ nhất
+    if b == 0:
+        return a
+    else:
+        # điều kiện đệ quy: tìm GCD bằng cách gọi hàm với các giá trị đã được cập nhật
+        return uoc_chung_lon_nhat(b, a % b)
+so1 = 48
+so2 = 18
+ket_qua = uoc_chung_lon_nhat(so1, so2)
+print(f"Ước số chung lớn nhất của {so1} và {so2} là {ket_qua}")

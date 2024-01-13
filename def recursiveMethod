@@ -1,0 +1,7 @@
+def recursiveMethod(n):
+    if n<1:# đièu kiện dừng: nếu n<1, xuất ra màn hình n is less than 1
+       print("n is less than 1")
+    else: # diều kiện đề: quy nếu n >=1 ,thực hiện recursiveMethod(n-1),sau đó in ra n ,tiếp tục lặp lại đến khi n <1( điều kiện dừng)
+      recursiveMethod(n-1)
+      print(n)
+recursiveMethod(5)
